@@ -1,0 +1,37 @@
+.contact-details {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.page-content {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.service-card {
+    background-color: white;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    color: #4a4a4a;
+    max-width: 100%;
+    position: relative;
+    margin: 0.5rem 0rem 1rem 0rem;
+  }
+
+.footer-btn {
+    margin-bottom: 10px; 
+    background-color: #fc9312; 
+    color: white
+}
+
+.contact-btn {
+    background-color: #fc9312; 
+    color: white;
+}
+
+.contact-label {
+    text-align: left;
+}
+
+#contact-quote {
+    margin-bottom: 20px;
+}

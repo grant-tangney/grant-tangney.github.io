@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TT Contact</title>
+    <link rel="stylesheet" href="bulma.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container has-text-centered">
+        <a href="home.html"><img src="./img/logo4.png"></a>
+    </div>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+
+            <div id="navMenu" class="navbar-menu navbar-brand">
+                <a class="navbar-item" href="home.html">
+                    Home
+                </a>
+                <a class="navbar-item" href="about.html">
+                    About
+                </a>
+                <a class="navbar-item" href="services.html">
+                    Services
+                </a>
+                <a class="navbar-item" href="contact.html">
+                    <strong>Contact</strong>
+                </a>
+            </div>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+
+        </div>
+    </nav>
+
+    <div class="columns is-centered" style="margin-top: 1rem">
+        <div class="column is-half page-content" style="text-align: left">
+            <h2 style="padding-bottom: 1rem">Fill out the form below and we'll get back to you ASAP...</h2>
+
+            <!-- <form action="https://formspree.io/gmtangney1@gmail.com" method="POST"> -->
+            <form>
+                <div class="columns">
+                    <div class="column">
+                        <div class="field">
+                            <label class="label contact-label">First Name</label>
+                            <input type="text" class="input" placeholder="e.g. John" name="pickup" id="first-name">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <label class="label contact-label">Last Name</label>
+                            <input type="text" class="input" placeholder="e.g. Smith" name="pickup" id="last-name">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" placeholder="e.g. johnsmith@email.com" name="email">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Contact Number</label>
+                    <div class="control">
+                        <input class="input" type="tel" placeholder="e.g. +2712 345 6789" name="email">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Subject</label>
+                    <div class="control">
+                        <div class="select">
+                            <select id="contact-subject" placeholder="Choose a subject">
+                                <option>Choose a subject</option>
+                                <option>Quote Request</option>
+                                <option>Itinerary Query</option>
+                                <option>Compliment</option>
+                                <option>Complaint</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contact-quote" style="display: none">
+                    <div class="columns">
+                        <div class="column is-two-thirds">
+                            <div class="field">
+                                <label class="label contact-label">Pick Up Location</label>
+                                <input type="text" class="input" placeholder="e.g. OR Tambo International Airport"
+                                    name="pickup" id="pickup-location">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="field">
+                                <label class="label contact-label">Pick Up Time</label>
+                                <input type="text" class="input" placeholder="e.g. 17:00" name="pickup" id="pickup-time">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column is-two-thirds">
+                            <div class="field">
+                                <label class="label contact-label">Drop Off Location</label>
+                                <input type="text" class="input" placeholder="e.g. Raddison Blu Sandton" id="dropoff-location">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="field">
+                                <label class="label contact-label">Drop Off Time</label>
+                                <input type="text" class="input" placeholder="e.g. 18:30" id="dropoff-time">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contact-message" class="field" style="display:none">
+                    <label class="label">Message</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Enter your message here"></textarea>
+                    </div>
+                </div>
+
+                <div class="field is-grouped">
+                    <div class="control">
+                        <input type="submit" value="Submit" class="button contact-btn" id="contact-submit">
+                    </div>
+                </div>
+            </form>
+
+            <br>
+            <h2>Alternatively, you can email, call or WhatsApp us:</h2>
+            <br>
+
+            <div>
+                <p class="contact-details"><i class="fa fa-envelope"></i> <a
+                        href="mailto:info@tangalitours.co.za?Subject=Enquiry" target="_top">info@tangalitours.co.za</a>
+                </p>
+                <p class="contact-details"><i class="fa fa-phone"></i> <a href="tel:+27836508415">+27 83 650 8415</a>
+                </p>
+                <p class="contact-details"><i class="fa fa-whatsapp"></i> <a href="https://wa.me/+27836508415">+27 83
+                        650 8415</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <div class="columns">
+                <div class="column">
+                    <a href="contact.html"><button class="button"
+                            style="margin-bottom: 10px; background-color: #fc9312; color: white   ">BOOK A TRIP
+                            TODAY</button></a><br>
+                    <strong>Tangali Tours & Transfers</strong><br>
+                    Paul Tangney<br>
+                    +27 83 650 8415
+                </div>
+                <!-- <div class="column">
+                    Website by <a href="https://thesouthernexplorers.com">Grant Tangney</a> <time datetime="2019">&copy;
+                        2019</time> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="burger.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>
